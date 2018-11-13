@@ -1,0 +1,22 @@
+{>"layout" /}
+
+{<body}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Team</th>
+      </tr>
+    </thead>
+    {#ppPlayers}
+        <tbody>
+          <tr>
+            <td>{id}</td>
+            <td>{player_name}</td>
+            <td>{team_id}</td>
+          </tr>
+          </tbody>
+      {/ppPlayers}
+  </table>
+{/body}

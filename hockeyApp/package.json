@@ -1,0 +1,40 @@
+{
+  "name": "hockeyapp",
+  "version": "1.0.0",
+  "description": "PP Hockey Manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HLS",
+  "license": "ISC",
+  "dependencies" : {
+    "body-parser" : "*",
+    "consolidate" : "*",
+    "dust" : "*",
+    "dustjs-helpers" : "*",
+    "dustjs-linkedin" : "*",
+    "express" : "*",
+    "pg" : "*"
+  }
+}
+
+rom django.conf.urls import url
+from . import views
+from django.contrib.auth.views import LoginView
+
+urlpatterns = [
+    url(r'^$', views.home),
+    url( r'^login/$', LoginView.as_view(template_name="accounts/login.html"), name="login")
+]﻿
+
+from django.urls import path, include
+from django.contrib.auth.views import login`
+
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home'),
+    url('login/', login, {'template_name'} }),
+
+]
